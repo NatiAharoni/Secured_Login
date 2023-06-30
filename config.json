@@ -1,0 +1,18 @@
+{
+   "passwordMinLength":8,
+   "passwordHistory":3,
+   "loginAttemptsAllowed":3,
+   "CheckCommonValues":1,
+   "enableSqli":0,
+   "enableXSS":0,
+   "mustToHaveChars":[
+      "!",
+      "@",
+      "#",
+      "$",
+      "%",
+      "^",
+      "&",
+      "*"
+   ]
+}

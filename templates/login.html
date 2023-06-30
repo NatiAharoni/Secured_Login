@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">		
+	</head>
+	<body></br></br></br></br></br>
+		<div class="login-page">
+            <div class="form">
+              <form class="login-form" action="{{ url_for('login') }}" method="post">
+                <div class="msg">{{ msg }}</div>
+                <input id="username" name="username" type="text" placeholder="username"/>
+                <input id="password" name="password" type="password" placeholder="password"/>
+                <button>login</button>
+				<p class="message">Not registered? <a href="{{url_for('register')}}">Create an account</a></p>
+                <p class="message">Forgot password? <a href="{{url_for('reset_password')}}">Reset password</a></p>
+			  </form>
+            </div>
+          </div>
+	</body>
+</html>

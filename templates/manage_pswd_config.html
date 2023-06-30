@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> User Page </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">					
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+				</br></br></br>
+				<h1 class="bottom">
+					Manage password configuration</br>		
+				</h1></br>
+				<p class="bottom">Add cutomer <a class="bottom" href="{{url_for('add_customer')}}"> Add Customer</a></p>
+				<p class="bottom">Change password <a class="bottom" href="{{url_for('change_password')}}"> Change password</a></p>
+				<a href="{{ url_for('admin_page') }}" class="btn">Back to admin page</a>
+		</div>
+		</div>
+	</body>
+</html>
